@@ -6,9 +6,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.Write("Please give your weight:");
-            string w = Console.Readline
+            string w = Console.ReadLine();
             float weight = float.Parse(w); // this is a comment
-            float height = 1.8f;
+            Console.Write("Please give your height:");
+            string h = Console.ReadLine();
+            float height = float.Parse(h);
             float bmi = (weight / (height * height));
             // Console.WriteLine print something to the console
             Console.WriteLine($"BMI is: {bmi}");
